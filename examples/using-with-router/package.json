@@ -4,13 +4,17 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "hoist-non-react-statics": "^2.2.2",
     "next": "latest",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "snyk": "^1.189.0"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
