@@ -5,12 +5,15 @@
     "test": "jest",
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "next": "^6.0.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@types/jest": "^23.0.0",
@@ -26,5 +29,6 @@
     "react-addons-test-utils": "^15.6.2",
     "react-test-renderer": "^16.2.0",
     "typescript": "^2.7.2"
-  }
+  },
+  "snyk": true
 }
