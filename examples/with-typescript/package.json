@@ -5,13 +5,16 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@zeit/next-typescript": "^1.1.1",
     "next": "latest",
     "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react-dom": "^16.5.2",
+    "snyk": "^1.192.3"
   },
   "devDependencies": {
     "@types/next": "^6.1.7",
@@ -19,5 +22,6 @@
     "@types/react-dom": "16.0.7",
     "typescript": "3.0.3"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
