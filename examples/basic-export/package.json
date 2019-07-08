@@ -5,12 +5,16 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "export": "next export",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "next": "latest",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "snyk": "^1.192.4"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
