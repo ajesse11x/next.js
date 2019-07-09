@@ -2,14 +2,18 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "next": "latest",
     "react": "^16.1.1",
-    "react-dom": "^16.1.1"
+    "react-dom": "^16.1.1",
+    "snyk": "^1.192.4"
   },
   "devDependencies": {
     "babel-plugin-module-resolver": "^3.1.1"
-  }
+  },
+  "snyk": true
 }
