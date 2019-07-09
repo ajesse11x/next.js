@@ -4,12 +4,16 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "NODE_ENV=production node server.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "fastify": "1.8.0",
     "next": "latest",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
-  }
+    "react-dom": "^16.0.0",
+    "snyk": "^1.192.4"
+  },
+  "snyk": true
 }
