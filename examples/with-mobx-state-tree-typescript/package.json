@@ -5,7 +5,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "tslint": "tslint -c tslint.json -p tsconfig.json"
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@zeit/next-typescript": "1.1.1",
@@ -15,7 +17,8 @@
     "next": "latest",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "typescript": "^3.0.1"
+    "typescript": "^3.0.1",
+    "snyk": "^1.192.4"
   },
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.1.0",
@@ -26,5 +29,6 @@
     "tslint-loader": "^3.5.3",
     "tslint-react": "^3.4.0"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
