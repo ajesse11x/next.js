@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "concurrently \"bsb -clean-world -make-world -w\" \"next dev\"",
     "build": "bsb -clean-world -make-world && next build",
-    "start": "next start"
+    "start": "next start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "license": "ISC",
   "dependencies": {
@@ -12,11 +14,13 @@
     "next": "latest",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "reason-react": "^0.5.3"
+    "reason-react": "^0.5.3",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "bs-platform": "^4.0.5",
     "concurrently": "^3.5.1",
     "webpack": "^3.8.1"
-  }
+  },
+  "snyk": true
 }
