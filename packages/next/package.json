@@ -30,7 +30,8 @@
     "release": "taskr release",
     "flow": "flow check",
     "lint": "standard 'bin/*' 'client/**/*.js' 'examples/**/*.js' 'lib/**/*.js' 'pages/**/*.js' 'server/**/*.js' 'build/**/*.js' 'test/**/*.js'",
-    "prepublish": "npm run release"
+    "prepublish": "npm run snyk-protect && npm run release",
+    "snyk-protect": "snyk protect"
   },
   "taskr": {
     "requires": [
@@ -100,7 +101,8 @@
     "webpack-hot-middleware": "2.22.3",
     "webpack-sources": "1.2.0",
     "webpackbar": "2.6.3",
-    "write-file-webpack-plugin": "4.3.2"
+    "write-file-webpack-plugin": "4.3.2",
+    "snyk": "^1.316.1"
   },
   "peerDependencies": {
     "react": "^16.0.0",
@@ -110,5 +112,6 @@
     "@babel/preset-flow": "7.0.0",
     "@taskr/clear": "1.1.0",
     "@taskr/watch": "1.1.0"
-  }
+  },
+  "snyk": true
 }
