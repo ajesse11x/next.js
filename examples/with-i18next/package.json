@@ -7,7 +7,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "i18next": "^10.0.7",
+    "i18next": "^19.8.5",
     "isomorphic-unfetch": "^2.0.0",
     "next": "latest",
     "react": "^16.0.0",
