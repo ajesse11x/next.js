@@ -82,7 +82,7 @@
     "mkdirp-then": "1.2.0",
     "nanoid": "1.2.1",
     "next-server": "^7.0.2-canary.8",
-    "path-to-regexp": "2.1.0",
+    "path-to-regexp": "8.0.0",
     "prop-types": "15.6.2",
     "prop-types-exact": "1.2.0",
     "react-error-overlay": "4.0.0",
