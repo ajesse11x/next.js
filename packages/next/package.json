@@ -65,7 +65,7 @@
     "babel-plugin-transform-react-remove-prop-types": "0.4.15",
     "case-sensitive-paths-webpack-plugin": "2.1.2",
     "cross-spawn": "5.1.0",
-    "del": "3.0.0",
+    "del": "8.0.0",
     "etag": "1.8.1",
     "event-source-polyfill": "0.0.12",
     "find-up": "2.1.0",
